@@ -27,6 +27,35 @@ Port 21 is used for sending control information between the client and the serve
 <BR>
 
 ## FTP status codes
+  
+  
+### Information request responses
+| Code | Description |
+| --- | --- |
+| 211  |   System status  |
+| 212  |   Directory status  |
+| 213  |   File status
+
+### Connection messages
+| Code | Description |
+| --- | --- |
+|  220  |   Service ready  |
+|  227  |   Entering passive mode  |
+|  228  |   Long passive mode  |
+|  229  |   Extended passive mode  |
+
+## Authentication messages
+| Code | Description |
+| --- | --- |
+| 230  |   User login  |
+| 231  |   User logout  |
+| 331  |   Valid username  |
+| 430  |   Invalid username or password
+| 530  |   No login, invalid password  |
+
+
+
+
 
 | Code | Description |
 | --- | --- |
@@ -67,7 +96,33 @@ Port 21 is used for sending control information between the client and the serve
 | ftp.request.command == "FEAT"  |    This filter displays only FTP request packets that contain the FEAT command, which is used to request a list of features supported by the server |
 | ftp.request.command == "ABOR"  |    This filter displays only FTP request packets that contain the ABOR command, which is used to abort a previous command or data transfer.
 
+<br>
+  
+## Detect Attacks By Wireshark
 
+### + Bruteforce
+  
+  + Bruteforce signal: List failed login attempts.
+```
+  ftp.response.code == 530
+```
+  
+  + Bruteforce signal: List target username.
+  
+  ```
+  (ftp.response.code == 530) and (ftp.response.arg contains "username")
+  ```
+  
+  + Password spray signal: List targets for a static password.
+  ```
+ (ftp.request.command == "PASS" ) and (ftp.request.arg == "password")
+```
+
+
+
+
+
+  
 <BR>
 
 ## Protocol on Wireshark
