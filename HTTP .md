@@ -50,7 +50,37 @@ HTTP stands for Hypertext Transfer Protocol. It is an application protocol used 
 4. HTTP spoofing: This type of attack involves impersonating a legitimate web server or user in order to gain access to sensitive information or to execute malicious code. Examples of HTTP spoofing attacks include DNS spoofing and IP spoofing.
 5. HTTP response splitting: This type of attack involves manipulating HTTP responses in order to inject malicious code into a victim's browser or to steal sensitive information. This can be done by exploiting vulnerabilities in web applications or by manipulating HTTP headers.
 
+<br>
+  
+## Detect Attacks By Wireshark
 
++ Nmap and brute force
+  
+```
+ http.user_agent contains "nmap"
+ http.request.uri contains "admin"
+ http.request.full_uri contains "admin"
+```
++ Detect ataacks tools
+  
+```
+  (http.user_agent contains "sqlmap") or (http.user_agent contains "Nmap") or (http.user_agent contains "Wfuzz") or (http.user_agent contains "Nikto")
+```
+  
+  
++ Log4j 
+
+```
+ http.request.method == "POST"
+ (ip contains "jndi") or ( ip contains "Exploit")
+ (frame contains "jndi") or ( frame contains "Exploit")
+ (http.user_agent contains "$") or (http.user_agent contains "==")
+```
+
+The attack starts with a "POST" request
+There are known cleartext patterns: "jndi:ldap" and "Exploit.class"
+  
+  
 <BR>
 
 ## wireshark filters
