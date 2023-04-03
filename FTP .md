@@ -8,7 +8,7 @@ FTP stands for File Transfer Protocol. It is a standard network protocol used fo
 | ---   | ---       | ---  | ---     |
 |   FTP | Application | 20,21 |  - Brute force attacks <br> -  FTP bounce attacks <br> -  Port stealing attacks <br> - Malware attacks <br> - DOS    |
 
-
+Port 21 is used for sending control information between the client and the server, such as login credentials and commands for navigating directories. Port 20 is used for sending the actual data (e.g., files) between the client and the server.
 
 <BR>
 
@@ -72,10 +72,10 @@ FTP stands for File Transfer Protocol. It is a standard network protocol used fo
 
 ## Protocol on Wireshark
 
-<img src="" height="300" >
-<img src="" height="300" >
-<img src="" height="300" >
-<img src="" height="300" >
+<img src="https://github.com/ahmed-kamal-el-maghraby/Images/blob/main/ftp1.PNG" height="400" >
+<img src="https://github.com/ahmed-kamal-el-maghraby/Images/blob/main/ftp2.PNG" height="400" >
+<img src="https://github.com/ahmed-kamal-el-maghraby/Images/blob/main/ftp3.PNG" height="400" >
+
 
 <BR>
 
