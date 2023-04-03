@@ -85,8 +85,8 @@ HTTP stands for Hypertext Transfer Protocol. It is an application protocol used 
 ## Protocol on Wireshark
 
 <img src="https://github.com/ahmed-kamal-el-maghraby/Images/blob/main/http.png" height="300" >
-<img src="https://github.com/ahmed-kamal-el-maghraby/Images/blob/main/http2.PNG" height="300" >
-<img src="https://github.com/ahmed-kamal-el-maghraby/Images/blob/main/http3.PNG" height="300" >
+<img src="https://github.com/ahmed-kamal-el-maghraby/Images/blob/main/http2.PNG" height="400" >
+<img src="https://github.com/ahmed-kamal-el-maghraby/Images/blob/main/http3.PNG" height="400" >
 
 
 <BR>
