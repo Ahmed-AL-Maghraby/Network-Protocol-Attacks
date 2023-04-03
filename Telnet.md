@@ -17,3 +17,11 @@ Telnet is a protocol used for interactive communication between two devices over
 3. Man-in-the-middle (MitM) attacks: An attacker can intercept and modify TELNET traffic between a client and server, allowing them to steal data, inject malicious code, or hijack the session.
 
 4. Denial-of-service (DoS) attacks: Attackers can flood a TELNET server with a large number of connection requests, overwhelming the server and causing it to crash or become unavailable.
+
+
+<BR>
+
+## protocol on Wireshark
+  
+<img src="https://raw.githubusercontent.com/ahmed-kamal-el-maghraby/Images/main/TEL1.PNG" height="300" >
+<img src="https://raw.githubusercontent.com/ahmed-kamal-el-maghraby/Images/main/tel3.png" height="300" >
