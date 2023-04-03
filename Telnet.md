@@ -45,7 +45,7 @@ tcp.port == 23   |    This filter will display all packets that are sent or rece
 
  <BR>
 
-## protocol on Wireshark
+## Protocol on Wireshark
   
 <img src="https://raw.githubusercontent.com/ahmed-kamal-el-maghraby/Images/main/TEL1.PNG" height="300" >
 <img src="https://raw.githubusercontent.com/ahmed-kamal-el-maghraby/Images/main/tel3.png" height="300" >
@@ -53,7 +53,7 @@ tcp.port == 23   |    This filter will display all packets that are sent or rece
   
 <BR>
 
-## Evint ID
+## Event ID
   
 + 592  :  (a new process has been created) where the image base filename is tlntsess.exe
 + 528  : successful logon <BR>
